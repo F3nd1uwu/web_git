@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Регистрация</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <header><h1>Регистрация на сайте aboba.zv</h1></header>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <p>Ваш логин:</p>
+                <input tabindex="1" placeholder="Вваедите ваш логин..." type="text" name="username">
+            </div>
+            <div>
+                <p>Ваш пароль:</p>
+                <input tabindex="2" placeholder="Введите ваш пароль..." type="password" name="pass">
+            </div>
+            <div>
+                <p>Ваш номер телефона:</p>
+                <input tabindex="3" placeholder="Введите ваш номер..." type="tel" name="telephone">
+            </div>
+            <div>
+                <p>Ваш пол:</p>
+                <div>
+                    <input tabindex="4" type="radio" name="gender" value="male"> Мужской
+                </div>
+                <div>
+                    <input tabindex="4" type="radio" name="gender" value="female"> Женский
+                </div>
+            </div>
+            <div>
+                <p>Дополнительная информация:</p>
+                <textarea tabindex="5" placeholder="Введите текст..." name="extra_info"></textarea>
+            </div>
+            <div>
+                <p>Загрузите ваше изображение профиля:</p>
+                <input type="file" name="photo">
+            </div>
+            <br>
+            <div>
+                <button type="reset">Сбросить</button>
+                <button type="submit">Зарегистрироваться</button>
+            </div>
+        </form>
+    </body>
+</html>
