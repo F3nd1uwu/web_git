@@ -1,12 +1,19 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Comfortaa;
     color: #fff;
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
     background-color: rgb(22, 22, 22);
 }
 
@@ -18,6 +25,7 @@ header {
 }
 
 .logo {
+    font-family: "Comfortaa", sans-serif;
     font-size: 28px;
     position: relative;
     left: 0px;
@@ -31,55 +39,58 @@ header {
     align-items: center;
 }
 
-nav ul {
+.header-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+.header-menu ul li {
     display: inline;
     margin-left: 20px;
 }
 
-nav ul li a {
+.header-menu ul li a {
     text-decoration: none;
+    font-size: 17px;
 }
 
-nav ul li a:hover {
+.header-menu ul li a:hover {
     color: #49cbecc4;
+}
+
+.container-hero {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 250px;
+    display: flex;
 }
 
 .hero-image {
     float: left;
     border-radius: 15px;
     position: relative;
-    top: 0px;
-    left: 30px;
+    top: -5px;
+    left: -210px;
 }
 
 .hero-title {
-    font-size: 70px;
-    float: left;
+    font-size: 50px;
     position: relative;
-    top: 170px;
-    left: 60px;
-    font-weight: 300;
+    right: 300px;
+    top: 100px;
 }
 
-.hero-underline img {
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    bottom: 0;
-    right: 22px;
-    background-position: center;
-    background-size: cover;
-    box-sizing: inherit;
+.hero-underline img{
+    float: bottom;
+    position: relative;
+    bottom: 60px;
+    left: 110px;
 }
 
 .bold-hero {
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .hero-decorate {
@@ -94,17 +105,16 @@ nav ul li a:hover {
     margin: 0;
     position: relative;
     top: 515px;
-    right: 425px;
+    right: 350px;
 }
 
 .hero-listen-caption {
     position: relative;
     top: 510px;
-    right: 415px;
+    right: 340px;
 }
 
 .list-reset-social li {
     display: inline;
     margin-left: 5px;
 }
-
